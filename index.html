@@ -13,6 +13,7 @@
 
     <!-- Tailwind CSS Head intigration -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
           theme: {
@@ -20,8 +21,8 @@
               colors: {
                 clifford: '#da373d',
               },
-              fontFamily:{
-                manrope: ['Manrope', 'sans-serif'],
+              fontFamily: {
+                manrope: ["Manrope", "system-ui"],
               },
             },
           },
@@ -32,18 +33,18 @@
 
       <!-- Daisy UI Intigration -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
-
       <!-- Daisy UI End -->
 
 </head>
-<body class="font-manrope">
+<body class="container mx-auto font-manrope">
     <!-- Start Header -->
     <header>
 
-        <h1 class="text-7xl font-bold">
+        <h1 class="text-7xl font-bold text-clifford">
             This is text
         </h1>
+
+        <button class="btn btn-error">click me</button>
 
     </header>
     <!-- End Header -->
