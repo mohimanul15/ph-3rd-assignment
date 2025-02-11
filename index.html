@@ -22,6 +22,8 @@
                 clifford: '#da373d',
                 btn_color: '#ABEF5F',
                 bg_2: '#F4F4F4',
+                title_col: '#212121',
+                des_col: '#494949',
               },
               fontFamily: {
                 manrope: ["Manrope", "system-ui"],
@@ -135,28 +137,58 @@
         <!-- 2nd section start -->
          <section class="bg-bg_2 w-full">
 
-            <section class="container max-w-screen-xl mx-auto">
+            <section class="container max-w-screen-xl mx-auto px-10">
               <div class="flex w-full flex-col border-opacity-50">
-                <div class="grid place-items-center">
+                <div class="grid place-items-center py-20">
   
-                  <div class="flex w-full p-12">
+                  <div class="flex w-full p-8 gap-6">
 
-                    <div class="grid flex-grow place-items-center">
+                    <div class="grid flex-1 text-left gap-3">
                         
-                        <div class="top_title bg-white rounded-full">
-                          <a class="bg-transparent flex px-5 py-3 gap-3">
+                        <div class="top_title bg-white rounded-full max-w-fit max-h-max">
+                          <a class="bg-transparent flex px-5 py-3 gap-3 font-manrope font-bold text-base text-[#494949]">
                             <img src="./icon/arrow-big.png" alt="right arrow" width="20" style="filter: invert(1);" class="rotate-90"> About Us
                           </a>
                         </div>
 
                         <div class="sec-head">
-                          
+                          <h2 class="text-5xl font-bold font-manrope text-title_col leading-tight">
+                            We design thoughtful, liveable spaces
+                          </h2>
                         </div>
-                        <div class="sec_des"></div>
-                        <div class="cards"></div>  
+                        <div class="sec_des">
+                          <p class="text-base font-manrope font-medium font-des_col">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                          </p>
+                        </div>
+                        <div class="cards_sec">
+                          <div class="flex w-full flex-col gap-4">
+
+                            <div class="card bg-white rounded-box flex flex-row px-4 py-6 gap-5">
+                              <div class="left_img my-auto">
+                                <img src="./assets/commercial.png" alt="" srcset="">
+                              </div>
+                              <div class="right_des">
+                                <h4 class="font-manrope font-extrabold text-lg">Commercial</h4>
+                                <p class="mt-2 max-w-80">The barn house captivates with its blend of rustic charm and modern.</p>
+                              </div>
+                            </div>
+
+                            <div class="card bg-white rounded-box flex flex-row px-4 py-6 gap-5">
+                              <div class="left_img my-auto">
+                                <img src="./assets/residential.png" alt="" srcset="">
+                              </div>
+                              <div class="right_des">
+                                <h4 class="font-manrope font-extrabold text-lg">Residential</h4>
+                                <p class="mt-2 max-w-80">The barn house captivates with its blend of rustic charm and modern.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>  
                     </div>
 
-                    <div class="grid flex-grow place-items-center">
+                    <div class="flex-1 place-items-right">
                       <img src="./assets/Rectangle.png" alt="" srcset="">
                     </div>
 
