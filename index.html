@@ -110,7 +110,7 @@
           </div>
         </nav>
         <!-- This is hero section -->
-        <section class="container mx-auto p-10">
+        <section class="container mx-auto p-10" id="home">
           <div class="hero text-center pb-6">
             <div class="text-center">
               <div class="max-w-screen-xl px-12">
@@ -137,7 +137,7 @@
     <!-- Start Main -->
     <main>
         <!-- 2nd section start -->
-         <section class="bg-bg_2 w-full">
+         <section class="bg-bg_2 w-full" id="service">
 
             <section class="container max-w-screen-xl mx-auto px-10">
               <div class="flex w-full flex-col border-opacity-50">
@@ -311,7 +311,7 @@
 
          <!-- Portfolio section added -->
 
-         <section class="bg-white w-full py-24 max-w-screen-xl mx-auto px-4">
+         <section class="bg-white w-full py-24 max-w-screen-xl mx-auto px-4" id="portfolio">
 
             <section class="container max-w-screen-xl mx-auto px-10 place-items-center py-6">
 
@@ -473,7 +473,7 @@
 
          <!-- blog section start -->
 
-         <section class="bg-bg_2 w-full">
+         <section class="bg-bg_2 w-full" id="blog">
 
             <section class="container max-w-screen-xl mx-auto px-10">
               <div class="flex w-full flex-col border-opacity-50">
@@ -643,7 +643,7 @@
 
          <!-- Faq Section start -->
 
-         <section class="bg-white w-full py-24 max-w-screen-xl mx-auto px-4">
+         <section class="bg-white w-full py-24 max-w-screen-xl mx-auto px-4" id="faq">
 
           <section class="container max-w-screen-xl mx-auto px-10 place-items-center py-6">
 
@@ -711,11 +711,122 @@
        </section>
 
          <!-- Faq section end -->
+
+         <!-- Contact us section start -->
+
+         <section class="bg-[url(./assets/bg.jpg)] w-full bg-no-repeat bg-cover" id="contact">
+
+          <section class="container max-w-screen-lg mx-auto px-10">
+            <div class="flex w-full flex-col border-opacity-50">
+
+              <!-- blog content section start -->
+
+              <div class="our_works flex flex-col place-items-center py-28">
+
+                <div class="top_title bg-[#ABEF5F] bg-opacity-20 rounded-full max-w-fit max-h-max">
+                  <a class="bg-transparent flex px-5 py-3 gap-3 font-manrope font-bold text-base text-[#494949]">
+                    <img src="./icon/arrow-big.png" alt="right arrow" width="20" style="filter: invert(1);" class="rotate-90"> Let's Connect
+                  </a>
+                </div>
+
+                <div class="sec-head py-2">
+                  <h2 class="text-5xl font-bold font-manrope text-title_col leading-tight text-center">
+                    Let’s Discuss Next Project
+                  </h2>
+                </div>
+
+                <div class="right_des max-w-screen-sm">
+                  <p class="mt-1 text-center font-medium text-base text-des_col">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+                <section class="items_cards mt-8 flex flex-col gap-5 w-full px-5">
+
+                  <!-- 1st blog post -->
+
+                  <div class="flex flex-row gap-6">
+
+                    <input type="text" placeholder="First Name*" class="input border-collapse w-1/2 rounded-full placeholder:font-medium text-base p-5" />
+
+                    <input type="text" placeholder="Last Name*" class="input border-collapse w-1/2 rounded-full placeholder:font-medium text-base p-5" />
+
+                  </div>
+
+                  <div class="flex flex-row gap-6">
+
+                    <input type="text" placeholder="Phone Number*" class="input border-collapse w-1/2 rounded-full placeholder:font-medium text-base p-5" />
+
+                    <input type="text" placeholder="Email Address*" class="input border-collapse w-1/2 rounded-full placeholder:font-medium text-base p-5" />
+
+                  </div>
+
+                  <div class="w-full">
+                    <textarea class="textarea border-collapse w-full rounded-[32px] h-60 resize-none placeholder:font-medium text-base p-5" placeholder="Write your message here"></textarea>
+                  </div>
+
+                  <div class="w-full">
+                    <a class="btn rounded-full align-middle text-xl font-extrabold bg-btn_color text-neutral-800 px-5 w-full h-auto">
+                      <div class="font-extrabold text-xl py-3">Send Now</div>
+                      <div class="rounded-full bg-black rotate-45 p-1">
+                        <img src="./icon/arrow-big.png" alt="right arrow" width="20">
+                      </div>
+                    </a>
+                  </div>
+
+                </section>
+
+              </div>
+
+              <!-- blog content section End -->
+            </div>
+          </section>
+          
+       </section>
+
+         <!-- Contact us section end -->
+
     </main>
     <!-- End Main -->
 
     <!-- Start Footer -->
-    <footer>
+    <footer class="w-full bg-black">
+
+      <section class="w-full py-24 max-w-screen-xl mx-auto px-4">
+
+        <section class="container max-w-screen-xl mx-auto px-10 place-items-center py-6">
+
+          <a class="btn btn-ghost text-xl">
+            <div class="rounded-full bg-btn_color rotate-45 p-1">
+              <img src="./icon/arrow-big.png" alt="right arrow" width="20" style="filter: invert(1);">
+            </div>
+            <div class="font-extrabold text-3xl text-border_col">Rinterio</div>
+          </a>
+
+          <div class="right_des max-w-screen-sm">
+            <p class="mt-3 text-center font-manrope text-light_col">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+
+          <div class="w-full py-12">
+            <ul class="flex flex-row justify-between max-w-screen-lg mx-auto">
+              <li><a href="#home" class="text-border_col">Home</a></li>
+              <li><a href="#service" class="text-border_col">Services</a></li>
+              <li><a href="#portfolio" class="text-border_col">Portfolio</a></li>
+              <li><a href="#blog" class="text-border_col">Blogs</a></li>
+              <li><a href="#contact" class="text-border_col">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <a class="btn rounded-full align-middle text-xl font-extrabold bg-btn_color text-neutral-800 px-5 border-none">
+              <div class="font-extrabold text-xl">Book Consult</div>
+              <div class="rounded-full bg-black rotate-45 p-1">
+                <img src="./icon/arrow-big.png" alt="right arrow" width="20">
+              </div>
+            </a>
+          </div>
+          
+        </section>
+
+     </section>
 
     </footer>
     <!-- End Footer -->
