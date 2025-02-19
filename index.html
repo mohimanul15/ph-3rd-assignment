@@ -49,31 +49,6 @@
         <nav class="container mx-auto max-w-screen-xl">
           <div class="navbar">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a class="font-extrabold text-base">Home</a></li>
-                  <li><a class="font-light text-base">Services</a></li>
-                  <li><a class="font-light text-base">Portfolio</a></li>
-                  <li><a class="font-light text-base">Blogs</a></li>
-                  <li><a class="font-light text-base">Contact Us</a></li>
-                </ul>
-              </div>
               <a class="btn btn-ghost text-xl">
                 <div class="rounded-full bg-btn_color rotate-45 p-1">
                   <img src="./icon/arrow-big.png" alt="right arrow" width="20">
@@ -83,11 +58,11 @@
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a class="font-extrabold text-base">Home</a></li>
-                  <li><a class="font-light text-base">Services</a></li>
-                  <li><a class="font-light text-base">Portfolio</a></li>
-                  <li><a class="font-light text-base">Blogs</a></li>
-                  <li><a class="font-light text-base">Contact Us</a></li>
+                <li><a class="font-bold text-base" href="#home">Home</a></li>
+                  <li><a class="font-light text-base" href="#service">Services</a></li>
+                  <li><a class="font-light text-base" href="#portfolio">Portfolio</a></li>
+                  <li><a class="font-light text-base" href="#blog">Blogs</a></li>
+                  <li><a class="font-light text-base" href="#contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="navbar-end space-x-3">
@@ -107,6 +82,32 @@
                 </div>
               </a>
             </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a class="font-bold text-base" href="#home">Home</a></li>
+                <li><a class="font-light text-base" href="#service">Services</a></li>
+                <li><a class="font-light text-base" href="#portfolio">Portfolio</a></li>
+                <li><a class="font-light text-base" href="#blog">Blogs</a></li>
+                <li><a class="font-light text-base" href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
         <!-- This is hero section -->
@@ -117,8 +118,8 @@
                 <div class="hero_banner py-3">
                   <img src="./assets/banner.png" alt="Hero Banner" srcset="" class="mx-auto">
                 </div>
-                <h1 class="text-7xl leading-tight font-extrabold font-manrope">A barn house of this design has a striking appearance</h1>
-                <p class="py-8 px-12">
+                <h1 class="text-7xl leading-tight font-extrabold font-manrope tracking-tighter text-title_col">A barn house of this design has a striking appearance</h1>
+                <p class="py-8 px-12 text-des_col">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
                 <button class="btn rounded-full align-middle font-manrope text-xl font-bold bg-btn_color/50 text-neutral-750 px-5 text-xl">View Details
@@ -137,7 +138,11 @@
     <!-- Start Main -->
     <main>
         <!-- 2nd section start -->
-         <section class="bg-bg_2 w-full" id="service">
+         <section class="bg-bg_2 w-full relative" id="service">
+
+          <div class="max-w-screen-xl mx-auto relative">
+            <img src="./assets/Vector.png" alt="" srcset="" class="absolute left-8 top-12">
+          </div>
 
             <section class="container max-w-screen-xl mx-auto px-10">
               <div class="flex w-full flex-col border-opacity-50">
@@ -145,7 +150,11 @@
   
                   <div class="flex w-full p-8 gap-6">
 
+                    <!-- 1st section start -->
+
                     <div class="grid flex-1 text-left gap-3">
+
+                      <!-- Title section -->
                         
                         <div class="top_title bg-white rounded-full max-w-fit max-h-max">
                           <a class="bg-transparent flex px-5 py-3 gap-3 font-manrope font-bold text-base text-[#494949]">
@@ -153,16 +162,23 @@
                           </a>
                         </div>
 
+                        <!-- 1st section Left side -->
+
+                        <!-- section heading -->
                         <div class="sec-head">
-                          <h2 class="text-5xl font-bold font-manrope text-title_col leading-tight">
+                          <h2 class="text-5xl font-bold font-manrope text-title_col leading-tight tracking-tighter">
                             We design thoughtful, liveable spaces
                           </h2>
                         </div>
+
+                        <!-- section description -->
                         <div class="sec_des">
                           <p class="text-base font-manrope font-medium text-des_col">
                             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                           </p>
                         </div>
+
+                        <!-- section 2 cards -->
                         <div class="cards_sec">
                           <div class="flex w-full flex-col gap-4">
 
@@ -188,18 +204,24 @@
 
                           </div>
                         </div>  
+
+                        <!-- 1st section left side end -->
+
                     </div>
 
                     <div class="flex-1 place-items-right">
                       <img src="./assets/Rectangle.png" alt="" srcset="">
                     </div>
 
+                    <!-- 1st section end -->
+
                   </div>
   
                 </div>
                 
                 <!-- counter section started -->
-                <div class="card bg-white rounded-box flex flex-row   px-4 py-6 gap-5 mx-6 place-items-center">
+                <div class="card bg-white rounded-box grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-4 py-6 mx-6 place-items-center w-full">
+
                   <div class="stat place-items-center gap-3">
                     <div class="stat-title">
                       <img src="./assets/comment-01.png" alt="" srcset="">
@@ -256,7 +278,7 @@
                     <p class="mt-1 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                   </div>
 
-                  <div class="items_cards mt-7 flex flex-row gap-5">
+                  <div class="items_cards mt-7 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
 
                       <div class="card bg-[#e7c1d3] rounded-box flex flex-col px-5 py-6 gap-5">
                         <div class="left_img my-auto">
@@ -337,11 +359,13 @@
 
             <section class="mt-5">
               
-                <div class="flex w-full flex-col gap-5">
+                <div class="flex w-full flex-col">
 
-                  <!-- 1 st Row section -->
+                  <!-- portfolio desktop -->
 
-                  <div class="card rounded-box grid place-items-center">
+                  <div class="card rounded-box grid place-items-center max-lg:hidden">
+
+                    <!-- 1 st Row section -->
 
                     <div class="flex w-full flex-col lg:flex-row gap-6">
 
@@ -376,9 +400,9 @@
 
                         <!-- 1st row 1st column end-->
 
-                        <!-- 1st row 2nd column start-->
-
                       </div>
+
+                      <!-- 1st row 2nd column start-->
 
                       <div class="rounded-2xl grid w-1/3 place-items-center border-2 border-border_col p-6">
                         
@@ -392,76 +416,88 @@
 
                     </div>
 
-                  </div>
+                     <!-- 2nd Row section -->
 
-                  <!-- 2nd Row section -->
+                    <div class="card rounded-box grid place-items-center pt-5">
+                      
+                      <div class="flex w-full flex-col lg:flex-row gap-6">
 
-                  <div class="card rounded-box grid place-items-center">
-                    
-                    <div class="flex w-full flex-col lg:flex-row gap-6">
-
-                      <div class="rounded-2xl grid w-1/4 place-items-center border-2 border-border_col p-6">
-                        
-                        <div class="card rounded-box grid place-content-center">
-                          <img src="./assets/img3.png" alt="" srcset="" class="size-max">
-                        </div>
-
-                      </div>
-
-                      <!-- 2nd row 2nd column start -->
-
-                      <div class="rounded-2xl grid w-2/4 place-items-center border-2 border-border_col p-6">
-                        
-                        <!-- 2nd row 2nd column 1st section -->
-
-                        <div class="flex w-full gap-6">
-
-                          <div class="card rounded-box grid place-content-center w-1/2">
-                            <img src="./assets/img4.png" alt="" srcset="" class="size-max">
+                        <div class="rounded-2xl grid w-1/4 place-items-center border-2 border-border_col p-6">
+                          
+                          <div class="card rounded-box grid place-content-center">
+                            <img src="./assets/img3.png" alt="" srcset="" class="size-max">
                           </div>
 
-                          <!-- 2nd row 2nd column 2nd section -->
+                        </div>
+
+                        <!-- 2nd row 2nd column start -->
+
+                        <div class="rounded-2xl grid w-2/4 place-items-center border-2 border-border_col p-6">
                           
-                          <div class="card rounded-box grid grow place-items-start w-1/2">
-                            <h4 class="font-manrope text-2xl font-extrabold">
-                              Commercial
-                            </h4>
-                            <p class="w-8/10 font-normal text-base text-des_col pt-3">
-                              The barn house captivates with its blend of rustic charm and modern. 
-                            </p>
-                            <div class="flex flex-row mt-5">
-                              <h4 class="font-extrabold text-xl font-manrope">
-                                View Details
+                          <!-- 2nd row 2nd column 1st section -->
+
+                          <div class="flex w-full gap-6">
+
+                            <div class="card rounded-box grid place-content-center w-1/2">
+                              <img src="./assets/img4.png" alt="" srcset="" class="size-max">
+                            </div>
+
+                            <!-- 2nd row 2nd column 2nd section -->
+                            
+                            <div class="card rounded-box grid grow place-items-start w-1/2">
+                              <h4 class="font-manrope text-2xl font-extrabold">
+                                Commercial
                               </h4>
-                              <div class="rounded-full bg-btn_color rotate-45 p-1 ml-4">
-                                <img src="./icon/arrow-big.png"alt="right arrow" width="20"style="filter: invert(1);">
+                              <p class="w-8/10 font-normal text-base text-des_col pt-3">
+                                The barn house captivates with its blend of rustic charm and modern. 
+                              </p>
+                              <div class="flex flex-row mt-5">
+                                <h4 class="font-extrabold text-xl font-manrope">
+                                  View Details
+                                </h4>
+                                <div class="rounded-full bg-btn_color rotate-45 p-1 ml-4">
+                                  <img src="./icon/arrow-big.png"alt="right arrow" width="20"style="filter: invert(1);">
+                                </div>
                               </div>
                             </div>
+
+                          </div>
+
+                          <!-- 1st row 1st column end-->
+
+                          <!-- 1st row 2nd column start-->
+
+                        </div>
+
+                        <!-- 2nd row 3rd column start -->
+
+                        <div class="rounded-2xl grid w-1/4 place-items-center border-2 border-border_col p-6">
+                          
+                          <div class="card rounded-box grid place-content-center">
+                            <img src="./assets/img5.png" alt="" srcset="" class="size-max">
                           </div>
 
                         </div>
 
-                        <!-- 1st row 1st column end-->
-
-                        <!-- 1st row 2nd column start-->
+                        <!-- 2nd row 3rd column end -->
 
                       </div>
-
-                      <!-- 2nd row 3rd column start -->
-
-                      <div class="rounded-2xl grid w-1/4 place-items-center border-2 border-border_col p-6">
-                        
-                        <div class="card rounded-box grid place-content-center">
-                          <img src="./assets/img5.png" alt="" srcset="" class="size-max">
-                        </div>
-
-                      </div>
-
-                      <!-- 2nd row 3rd column end -->
 
                     </div>
 
                   </div>
+
+                  <!-- portfolio tablet & mobile -->
+
+                  <div class="flex w-full flex-col">
+
+                    <!-- 1st portfolio -->
+
+
+
+                  </div>
+
+                 
                 </div>
 
             </section>
